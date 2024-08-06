@@ -15,10 +15,12 @@
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
+    "groq-sdk": "^0.5.0",
     "jsonwebtoken": "^9.0.2",
     "memory-cache": "^0.2.0",
     "mysql2": "^3.10.2",
     "nodemailer": "^6.9.14",
+    "openai": "^4.53.2",
     "puppeteer": "^22.14.0",
     "redis": "^4.6.15"
   },

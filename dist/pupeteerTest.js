@@ -11,10 +11,14 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 const puppeteer = require('puppeteer');
 (() => __awaiter(void 0, void 0, void 0, function* () {
     try {
-        const browser = yield puppeteer.launch({ headless: false });
+        const browser = yield puppeteer.launch({
+            args: [
+                '--incognito',
+            ],
+        });
         const page = yield browser.newPage();
         // Aumenta el tiempo de espera y configura 'waitUntil' para esperar a que la página esté completamente cargada
-        yield page.goto('https://chatgpt.com/', { timeout: 60000, waitUntil: 'domcontentloaded' });
+        yield page.goto('https://www.google.com/', { timeout: 60000, waitUntil: 'domcontentloaded' });
     }
     catch (error) {
         console.error('Error occurred while navigating:', error);
